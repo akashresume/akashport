@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
@@ -31,8 +32,14 @@ body {
   max-width: 1366px;
   height: 80px;
   background-color: #4167b2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 16px;
 }
 .container img {
@@ -44,6 +51,9 @@ body {
 }
 
 .container form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -117,6 +127,9 @@ body {
   margin-top: 0px;
 }
 .achievements .Photography {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 5px;
 }
@@ -156,8 +169,13 @@ body {
 }
 
 .subcontainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-basis: 45%;
+  -webkit-flex-basis: 45%;
+      -ms-flex-preferred-size: 45%;
+          flex-basis: 45%;
   max-height: 355px;
 }
 
@@ -201,6 +219,9 @@ body {
 }
 
 .About {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   padding: 20px 0 0 20px;
   font-size: 18px;
@@ -241,6 +262,9 @@ body {
 }
 
 .Secondsection {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -248,6 +272,9 @@ body {
   width: 45px;
 }
 .mind {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
   margin-left: 20px;
@@ -270,6 +297,9 @@ body {
 }
 
 .livevideo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   padding: 10px 12px;
   margin-top: 10px;
@@ -290,9 +320,17 @@ body {
   color: #272728;
 }
 .mindicons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-basis: 30%;
-  justify-content: space-between;
+  -webkit-flex-basis: 30%;
+      -ms-flex-preferred-size: 30%;
+          flex-basis: 30%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-right: 20px;
   margin-bottom: 20px;
 }
@@ -323,6 +361,9 @@ body {
 }
 
 .feeling {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 
   margin-left: 20px;
@@ -370,9 +411,17 @@ body {
 }
 
 .threeworkcol {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-basis: 45%;
-  justify-content: space-between;
+  -webkit-flex-basis: 45%;
+      -ms-flex-preferred-size: 45%;
+          flex-basis: 45%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 20px;
 }
 .pptworks {
@@ -459,6 +508,9 @@ body {
 
 .skillslist {
   margin-left: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   margin-bottom: 2px;
@@ -486,8 +538,14 @@ body {
   color: #000000;
   padding-left: 20px;
   padding-right: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   position: relative;
   padding-top: 20px;
   font-size: 20px;
@@ -534,9 +592,17 @@ body {
 }
 
 .twoworkcol {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-basis: 45%;
-  justify-content: space-between;
+  -webkit-flex-basis: 45%;
+      -ms-flex-preferred-size: 45%;
+          flex-basis: 45%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 20px;
 }
 
@@ -585,7 +651,9 @@ body {
   position: absolute;
   top: 80%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-size: 24px;
 }
 
@@ -609,7 +677,11 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0) ;
+    -webkit-transform: translate(-50%, -50%) scale(0) ;
+        -ms-transform: translate(-50%, -50%) scale(0) ;
+            transform: translate(-50%, -50%) scale(0) ;
+    -webkit-transition: all 0.1s linear ;
+    -o-transition: all 0.1s linear ;
     transition: all 0.1s linear ;
     width: 1000px ;
     
@@ -630,9 +702,18 @@ body {
     right: -10px;
     width: 40px;
     height: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-decoration: none;
     background-color: lawngreen;
     border-radius: 50%;
@@ -644,6 +725,10 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
-    transform: scale(0);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
